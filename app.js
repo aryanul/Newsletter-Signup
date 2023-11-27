@@ -15,7 +15,7 @@ app.get("/",function(req,res){
 
 app.post("/",function(req,res){
     const axios = require('axios');
-    const apiKey = 'c5071f84e178f73737fe322e2f8fb9f4';
+    const apiKey = <YOUR API KEY>;
     const listId = '84865a8654';
     const apiUrl = `https://us21.api.mailchimp.com/3.0/lists/${listId}/members/`; // Replace <dc> with your Mailchimp data center code
     const firstName= req.body.fName;
@@ -99,11 +99,5 @@ app.listen(4000,function(){
     console.log("The server is running on port 4000.");
 })
 
-//Api Key
-//c5071f84e178f73737fe322e2f8fb9f4-us21
-//list id
-//84865a8654
-//API
-//https://us19.admin.mailchimp.com/lists/
 
 
