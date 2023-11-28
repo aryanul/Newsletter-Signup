@@ -50,7 +50,7 @@ app.post("/",function(req,res){
         } else {
           console.log(`Unexpected status: ${status}. Redirecting to error.html`);
           // Redirect to error.html for any other status
-          res.sendFile(__dirname+"/success.html");
+          res.sendFile(__dirname+"/failure.html");
         }
       })
       .catch(error => {
